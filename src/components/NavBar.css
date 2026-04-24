@@ -1,0 +1,157 @@
+.navbar {
+  background-color: var(--surface-dark);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+.nav-container {
+  max-width: 1126px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.nav-logo-image {
+  display: block;
+  height: 42px;
+  width: auto;
+  max-width: min(54vw, 320px);
+  object-fit: contain;
+}
+
+.nav-logo:hover {
+  opacity: 0.8;
+}
+
+.nav-button {
+  background-color: var(--accent);
+  color: var(--inverse-text);
+  border: 1px solid transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-button:hover {
+  filter: brightness(1.06);
+  border-color: var(--accent-border);
+  transform: scale(1.05);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: var(--surface-dark-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  max-height: 60vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.popup-header h2 {
+  margin: 0;
+  color: var(--text-h);
+}
+
+.popup-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-close:hover {
+  color: var(--text-h);
+}
+
+.teams-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teams-list li {
+  margin-bottom: 0.5rem;
+}
+
+.teams-list a {
+  display: block;
+  padding: 0.75rem 1rem;
+  background-color: var(--code-bg);
+  color: var(--text-h);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.teams-list a:hover {
+  background-color: var(--accent);
+  color: var(--inverse-text);
+}
+
+.empty-message {
+  text-align: center;
+  color: var(--text);
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-logo-image {
+    height: 34px;
+    max-width: 56vw;
+  }
+
+  .nav-button {
+    padding: 0.45rem 1rem;
+    font-size: 0.9rem;
+  }
+}

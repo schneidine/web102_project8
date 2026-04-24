@@ -1,0 +1,41 @@
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  font-family: var(--sans);
+}
+
+input,
+textarea,
+select {
+  font-family: var(--sans);
+}
