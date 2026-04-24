@@ -51,6 +51,11 @@ The following additional features are implemented:
 
 Challenges included keeping UI changes consistent across all pages, updating persisted hero data from role-based objects to array-based selection, and preserving create/edit/detail/list behavior with Supabase.
 
+
+
+<img width="784" height="413" alt="image" src="https://github.com/user-attachments/assets/c0f1775e-de2e-4f27-b6c5-c76e132bc477" />
+
+
 ## License
 
 Copyright [yyyy] [name of copyright owner]
